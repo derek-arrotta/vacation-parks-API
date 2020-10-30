@@ -22,11 +22,15 @@ function displayResults(responseJson) {
     //list with the video title, description,
     //and thumbnail
     $('#results-list').append(
-      `<li><h3>${responseJson.data[i].fullName}</h3>
+      `<hr>
+      <li>
+      <h3>${responseJson.data[i].fullName}</h3>
+      <img src='${responseJson.data[i].images[0].url}' >
       <p>${responseJson.data[i].description}</p>
       <p>${responseJson.data[i].addresses[0].line1}, ${responseJson.data[i].addresses[0].city}, ${responseJson.data[i].addresses[0].stateCode} ${responseJson.data[i].addresses[0].postalCode}</p>
       <a href='${responseJson.data[i].url}'>Park Website</a>
-      </li>`
+      </li>
+      <hr>`
     )};
   //display the results section  
   $('#results').removeClass('hidden');
