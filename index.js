@@ -26,7 +26,13 @@ function displayResults(responseJson) {
       <h3>${responseJson.data[i].fullName}</h3>
       <img src='${responseJson.data[i].images[0].url}' >
       <p>${responseJson.data[i].description}</p>
-      <p>${responseJson.data[i].addresses[0].line1}, ${responseJson.data[i].addresses[0].city}, ${responseJson.data[i].addresses[0].stateCode} ${responseJson.data[i].addresses[0].postalCode}</p>
+        ${responseJson.data[i].addresses[0].line1}
+        ${responseJson.data[i].addresses[0].line2}
+        ${responseJson.data[i].addresses[0].line3}
+        ${responseJson.data[i].addresses[0].city},
+        ${responseJson.data[i].addresses[0].stateCode}
+        ${responseJson.data[i].addresses[0].postalCode}
+      </p>
       <a href='${responseJson.data[i].url}'>Park Website</a>
       </li>
       <hr>`
