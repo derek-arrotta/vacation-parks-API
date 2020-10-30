@@ -2,7 +2,7 @@
 
 // put your own value below!
 const apiKey = 'qaTccymBsOTDbKv6BpCmijDVAxOEaIESENfo8mX7'; 
-const searchURL = 'https://www.googleapis.com/youtube/v3/search';
+const searchURL = 'https://developer.nps.gov/api/v1/parks';
 
 
 function formatQueryParams(params) {
