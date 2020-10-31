@@ -20,11 +20,14 @@ function displayResults(responseJson) {
     // for each video object in the items 
     //array, add a list item to the results 
     //(name of park, image, description, address, and link to website)
+    // <img src='${responseJson.data[i].images[0].url}' > // add this in to empty line below
+    // once I figure out error issue (I think some data arrays don't have images, so its 
+    // causing an error??)
     $('#results-list').append(
       `<hr>
       <li>
       <h3>${responseJson.data[i].fullName}</h3>
-      <img src='${responseJson.data[i].images[0].url}' >
+      
       <p>${responseJson.data[i].description}</p>
         ${responseJson.data[i].addresses[0].line1}
         ${responseJson.data[i].addresses[0].line2}
