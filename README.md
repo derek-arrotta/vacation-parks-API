@@ -3,7 +3,7 @@
  
  ## Technology
  
- Javascript, HTML, CSS, and API. 
+ Javascript, HTML, CSS, and National Parks API. 
  
   ## Screenshots
  ![parksAPI](nationalParks.png)
